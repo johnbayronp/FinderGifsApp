@@ -1,13 +1,63 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 50px;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#11324D;
+  color:#ffd81a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.card {
+  align-content: center;
+  border:2px solid #07224a;
+  background: #001432;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.card:hover {
+  display: inline-block;
+  animation: pulse;
+  background: #032353;
+  animation-duration: 1s;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+}
+.card img {
+  max-width: 100%;
+}
+
+.inpt{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* crear un input con border degradados del grande de la pantalla */
+.inpt:focus {
+  border: 1px solid #555;
+}
+
+.white{
+  color:white;
 }
